@@ -136,10 +136,7 @@ input {
     border: 2px solid #e3cc9c;
 }
 
-.asterisk{
-    color: red;
-    
-}
+
 input:invalid:required:focus{
     color: red;
     border:2px solid red;
@@ -198,6 +195,7 @@ input:valid{
     .credit-paragraph{
         right: 60%;
         font-size: 17px;
+        height: 0;
     }
     label{
         font-size: 11px;

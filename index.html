@@ -56,16 +56,16 @@
                 <input type="email" name="email" placeholder="Enter your email..." required>
             </div>
             <div class="form-row">
-                <label for="phone_number">PHONE NUMBER*<span class="asterisk">*</span></label>
+                <label for="phone_number">PHONE NUMBER<span class="asterisk">*</span></label>
                 <input type="text" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" name="phone_number" placeholder="(Format 1111-222-333)" required>
             </div>
             <div class="form-row">
                 <label for="password">PASSWORD<span class="asterisk">*</span></label>
-                <input type="password" name="password" placeholder="Enter your password..." required>
+                <input type="password" minlength="8" name="password" placeholder="Enter your password..." required>
             </div>
             <div class="form-row">
                 <label for="confirm_password">CONFIRM PASSWORD<span class="asterisk">*</span></label>
-                <input type="password" name="confirm_password" placeholder="Confirm password..." required>
+                <input type="password" minlength="8" name="confirm_password" placeholder="Confirm password..." required>
             </div>
         
         </div>
