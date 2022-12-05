@@ -212,68 +212,54 @@ input:valid{
 
 /*End Media screen for laptops*/
 
-/*Start Media screen for mobile*/
-@media  screen and (max-width: 635px) {
+
+@media screen and (max-width:635px) {
     .container{
         display: block;
     }
-    .credit-paragraph{
-        right: 29%;
-        font-size: 15px;
-    }
-    .left {
-        width: 100vw;
-        height: 100vh;
-    }
     .image-container{
         width: 100vw;
-        height: 100vh;
-    }
-    .right {
-        width: 100vw;
-        height: 100vh;
-    }
-    .logo-container{
-        top: 140px;
-    }
-    .form-container{
-        width: 100vw;
-        text-align: center;
-    }
-    form {
-        width: 100vw;
-    }
-    
-}
-
-@media  screen and (max-width: 370px), screen and (max-height: 650px){
-    .logo-container {
-        top: 55px;
-    }
-    .image-container{
-        height: 40vh;
+        height: 25vh;
     }
     .left{
-        height: 40vh;
+        width: 100vw;
+        height: 25vh;
+    }
+    .logo-container{
+        top: 30px;
+        
+    }
+    span.odin-text{
+        font-size: 35px;
     }
     .credit-paragraph{
-        right: 10%;
-        top: 35%;
-        height: 0;
+        right: 12%;
+        top: 22%;
+    }
+
+    .right{
+        width: 100vw;
+        
     }
     .dummy-text{
-        padding: 10px 50px 10px 50px;
         font-size: 15px;
     }
+    form{
+        width: 100vw;
+        display: block;
+    }
     .form-container{
-        padding: 20px 50px 15px 80px;
+        width: 100vw;
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .create-account-button{
+        text-align: center;
+        margin-top: 20px;
+        
     }
     .create-account{
-        margin-left: 55px;
-    }
-    .log-in{
-        padding-bottom: 20px;
+        margin: 0;
+        text-align: center;
     }
 }
-/*End Media screen for mobile*/
-
