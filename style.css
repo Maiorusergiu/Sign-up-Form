@@ -260,4 +260,7 @@ input:valid{
         margin: 0;
         text-align: center;
     }
+    .form-row{
+        margin-bottom: 10px;
+    }
 }
