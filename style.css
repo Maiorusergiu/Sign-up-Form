@@ -1,0 +1,279 @@
+@import url('https://fonts.cdnfonts.com/css/norse');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+   
+}
+body {
+    background-color: #E6B325;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.left {
+    width: 40vw;
+    height: 100vh;
+}
+.right {
+    width: 60vw;
+    height: 100vh;
+}
+.image-container {
+    width: 40vw;
+    height: 100vh;
+    background-image: url('images/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.dummy-text{
+    padding: 90px 90px 50px 90px;
+    font-size: 23px;
+}
+.second-paragraph{
+    margin-top: 25px;
+}
+label {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    font-weight: 600;
+    color: #393E46;
+}
+
+.form-container{
+    width: 60vw;
+    background-color: #A47E3B;
+    padding: 25px 0px 25px 90px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+form {
+    display: flex;
+    flex-flow: wrap;
+    gap: 25px;
+    width: 50vw;
+}
+h4{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #393E46;
+    font-weight: 1000;
+}
+.create-account {
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.create-account-button {
+    margin-bottom: 15px;
+    padding: 15px 60px 15px 60px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #393E46;
+    color: #E5D9B6;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.create-account-button:hover {
+    color: #393E46;
+    background-color: #E5D9B6;
+    cursor: pointer;
+}
+.logo-container{
+    background-color: rgb(0 0 0 / 57%);
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    top: 289px;
+}
+img {
+    width: 15%;
+    padding: 10px;
+}
+span.odin-text {
+    font-size: 70px;
+    font-family: 'Norse', sans-serif;
+    font-weight: 600;
+    color:#e6b325;
+}
+.log-in{
+    font-size: 15px;
+    font-weight: 600;
+}
+.credit-paragraph {
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 73%;
+    font-size: 20px
+}
+a{
+    color: white;
+}
+a:hover{
+    color: #E5D9B6;
+}
+.log-in-span {
+    color: #393E46;
+    cursor: pointer;
+}
+.log-in-span:hover{
+    color: #E5D9B6;
+    text-decoration: underline;
+}
+input {
+    padding: 5px 200px 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #e3cc9c;
+    border: 2px solid #e3cc9c;
+}
+
+.asterisk{
+    color: red;
+    
+}
+input:invalid:required:focus{
+    color: red;
+    border:2px solid red;
+}
+
+input:valid{
+    border: 2px solid rgb(55, 255, 55);
+    border-style: inset;
+   
+}
+
+/*Start Media screen for laptops*/
+
+@media screen and (max-width: 1336px), 
+       screen and (max-height: 768px) {
+        input {
+            padding: 5px 70px 5px 10px;
+        }
+        .credit-paragraph{
+            right: 68%;
+            font-size: 17px;
+        }
+        span.odin-text{
+            font-size: 60px;
+        }
+
+       }
+
+@media screen and (max-width:1024px), screen and(max-height:640px) {
+
+    input {
+        padding: 5px 0px 5px 10px;
+    }
+    .credit-paragraph{
+        right: 65%;
+        font-size: 17px;
+    }
+    .dummy-text{
+        padding: 30px 50px 15px 50px;
+        font-size: 20px;
+    }
+    .form-container{
+        padding: 20px 50px 15px 50px;
+    }
+    label{
+        font-size: 13px;
+    }
+    h4{
+        font-size: 23px;
+    }
+    span.odin-text{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width:880px){
+    .credit-paragraph{
+        right: 60%;
+        font-size: 17px;
+    }
+    label{
+        font-size: 11px;
+    }
+    h4{
+        font-size: 21px;
+    }
+    span.odin-text{
+        font-size: 50px;
+    }
+}
+
+/*End Media screen for laptops*/
+
+/*Start Media screen for mobile*/
+@media  screen and (max-width: 635px) {
+    .container{
+        display: block;
+    }
+    .credit-paragraph{
+        right: 29%;
+        font-size: 15px;
+    }
+    .left {
+        width: 100vw;
+        height: 100vh;
+    }
+    .image-container{
+        width: 100vw;
+        height: 100vh;
+    }
+    .right {
+        width: 100vw;
+        height: 100vh;
+    }
+    .logo-container{
+        top: 140px;
+    }
+    .form-container{
+        width: 100vw;
+        text-align: center;
+    }
+    form {
+        width: 100vw;
+    }
+    
+}
+
+@media  screen and (max-width: 370px), screen and (max-height: 650px){
+    .logo-container {
+        top: 55px;
+    }
+    .image-container{
+        height: 40vh;
+    }
+    .left{
+        height: 40vh;
+    }
+    .credit-paragraph{
+        right: 10%;
+        top: 35%;
+        height: 0;
+    }
+    .dummy-text{
+        padding: 10px 50px 10px 50px;
+        font-size: 15px;
+    }
+    .form-container{
+        padding: 20px 50px 15px 80px;
+    }
+    .create-account{
+        margin-left: 55px;
+    }
+    .log-in{
+        padding-bottom: 20px;
+    }
+}
+/*End Media screen for mobile*/
+
